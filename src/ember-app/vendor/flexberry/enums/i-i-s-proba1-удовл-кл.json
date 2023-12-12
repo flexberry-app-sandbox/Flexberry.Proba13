@@ -1,0 +1,8 @@
+﻿{
+  "nameSpace": "IIS.Proba1",
+  "className": "УдовлКл",
+  "enumObjects": {
+    "НеУдовл": "НеУдовл",
+    "Удовл": "Удовл"
+  }
+}

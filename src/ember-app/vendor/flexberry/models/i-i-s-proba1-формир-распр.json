@@ -1,0 +1,189 @@
+﻿{
+  "name": "IISProba1ФормирРаспр",
+  "modelName": "i-i-s-proba1-формир-распр",
+  "className": "ФормирРаспр",
+  "nameSpace": "IIS.Proba1",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "дата",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "номерДогРаспр",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "докумПостав",
+      "relatedTo": "i-i-s-proba1-докум-постав",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "пунктПогрузки",
+      "relatedTo": "i-i-s-proba1-пункт-погрузки",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "списокБарж",
+      "relatedTo": "i-i-s-proba1-список-барж",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "списокКонтей",
+      "relatedTo": "i-i-s-proba1-список-контей",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ФормирРаспрE",
+      "modelName": "i-i-s-proba1-формир-распр",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "номерДогРаспр",
+          "caption": "Номер дог распр",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ФормирРаспрL",
+      "modelName": "i-i-s-proba1-формир-распр",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "номерДогРаспр",
+          "caption": "Номер дог распр",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "СписокБарж",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "производитель",
+              "caption": "Производитель",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Производитель",
+          "name": "списокБарж",
+          "relatedTo": "i-i-s-proba1-список-барж",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "СписокКонтей",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наимКонтей",
+              "caption": "Наим контей",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Наим контей",
+          "name": "списокКонтей",
+          "relatedTo": "i-i-s-proba1-список-контей",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ПунктПогрузки",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "адрес",
+              "caption": "Адрес",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Адрес",
+          "name": "пунктПогрузки",
+          "relatedTo": "i-i-s-proba1-пункт-погрузки",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ДокумПостав",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "дата",
+              "caption": "Дата",
+              "hidden": false,
+              "index": 5
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Дата",
+          "name": "докумПостав",
+          "relatedTo": "i-i-s-proba1-докум-постав",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

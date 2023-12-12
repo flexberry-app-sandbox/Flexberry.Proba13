@@ -1,0 +1,95 @@
+﻿{
+  "name": "IISProba1ТЧИнфОЗак",
+  "modelName": "i-i-s-proba1-т-ч-инф-о-зак",
+  "className": "ТЧИнфОЗак",
+  "nameSpace": "IIS.Proba1",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "количество",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "товары",
+      "relatedTo": "i-i-s-proba1-товары",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "докумПостав",
+      "relatedTo": "i-i-s-proba1-докум-постав",
+      "inverse": "тЧИнфОЗаказе"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ТЧИнфОЗакE",
+      "modelName": "i-i-s-proba1-т-ч-инф-о-зак",
+      "attrs": [
+        {
+          "name": "количество",
+          "caption": "Количество",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "НаимТовара",
+          "lookupValueField": "наимТовара",
+          "relationName": "Товары",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наимТовара",
+              "caption": "Наим товара",
+              "hidden": true,
+              "index": 1
+            },
+            {
+              "name": "едИзм",
+              "caption": "",
+              "hidden": false,
+              "index": 3
+            },
+            {
+              "name": "масса",
+              "caption": "",
+              "hidden": false,
+              "index": 4
+            },
+            {
+              "name": "цена",
+              "caption": "",
+              "hidden": false,
+              "index": 5
+            }
+          ],
+          "index": 0,
+          "type": "standard",
+          "caption": "Товары",
+          "name": "товары",
+          "relatedTo": "i-i-s-proba1-товары",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-proba1-формир-распр-e",
+  "editForm": "i-i-s-proba1-формир-распр-e",
+  "external": false,
+  "caption": "Формир распр",
+  "name": "IISProba1ФормирРаспрL",
+  "className": "ФормирРаспрL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-proba1-формир-распр",
+      "modelProjection": "ФормирРаспрL"
+    }
+  ]
+}

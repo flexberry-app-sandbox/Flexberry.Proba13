@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-proba1-товары-e",
+  "editForm": "i-i-s-proba1-товары-e",
+  "external": false,
+  "caption": "Товары",
+  "name": "IISProba1ТоварыL",
+  "className": "ТоварыL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-proba1-товары",
+      "modelProjection": "ТоварыL"
+    }
+  ]
+}

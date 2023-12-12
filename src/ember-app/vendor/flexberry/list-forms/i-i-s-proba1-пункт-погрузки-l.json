@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-proba1-пункт-погрузки-e",
+  "editForm": "i-i-s-proba1-пункт-погрузки-e",
+  "external": false,
+  "caption": "Пункт погрузки",
+  "name": "IISProba1ПунктПогрузкиL",
+  "className": "ПунктПогрузкиL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-proba1-пункт-погрузки",
+      "modelProjection": "ПунктПогрузкиL"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-proba1-клиенты-e",
+  "editForm": "i-i-s-proba1-клиенты-e",
+  "external": false,
+  "caption": "Клиенты",
+  "name": "IISProba1КлиентыL",
+  "className": "КлиентыL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-proba1-клиенты",
+      "modelProjection": "КлиентыL"
+    }
+  ]
+}

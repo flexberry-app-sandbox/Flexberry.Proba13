@@ -1,0 +1,169 @@
+﻿{
+  "name": "IISProba1ФормирРезПос",
+  "modelName": "i-i-s-proba1-формир-рез-пос",
+  "className": "ФормирРезПос",
+  "nameSpace": "IIS.Proba1",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "дата",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "наличДеф",
+      "type": "boolean",
+      "flexberryType": "bool",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "статусЗаказа",
+      "type": "i-i-s-proba1-статус-заказа",
+      "flexberryType": "СтатусЗаказа",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "удовлКл",
+      "type": "i-i-s-proba1-удовл-кл",
+      "flexberryType": "УдовлКл",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "формирРаспр",
+      "relatedTo": "i-i-s-proba1-формир-распр",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ФормирРезПосE",
+      "modelName": "i-i-s-proba1-формир-рез-пос",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "статусЗаказа",
+          "caption": "Статус заказа",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "наличДеф",
+          "caption": "Налич деф",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "удовлКл",
+          "caption": "Удовл кл",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Дата",
+          "lookupValueField": "дата",
+          "relationName": "ФормирРаспр",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "дата",
+              "caption": "Дата",
+              "hidden": true,
+              "index": 5
+            }
+          ],
+          "index": 4,
+          "type": "standard",
+          "caption": "Формир распр",
+          "name": "формирРаспр",
+          "relatedTo": "i-i-s-proba1-формир-распр",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ФормирРезПосL",
+      "modelName": "i-i-s-proba1-формир-рез-пос",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "статусЗаказа",
+          "caption": "Статус заказа",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "наличДеф",
+          "caption": "Налич деф",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "удовлКл",
+          "caption": "Удовл кл",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ФормирРаспр",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "дата",
+              "caption": "Дата",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Дата",
+          "name": "формирРаспр",
+          "relatedTo": "i-i-s-proba1-формир-распр",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

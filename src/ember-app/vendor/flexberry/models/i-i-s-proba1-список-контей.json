@@ -1,0 +1,75 @@
+﻿{
+  "name": "IISProba1СписокКонтей",
+  "modelName": "i-i-s-proba1-список-контей",
+  "className": "СписокКонтей",
+  "nameSpace": "IIS.Proba1",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "наимКонтей",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "номерКонтей",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "СписокКонтейE",
+      "modelName": "i-i-s-proba1-список-контей",
+      "attrs": [
+        {
+          "name": "наимКонтей",
+          "caption": "Наим контей",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "номерКонтей",
+          "caption": "Номер контей",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "СписокКонтейL",
+      "modelName": "i-i-s-proba1-список-контей",
+      "attrs": [
+        {
+          "name": "наимКонтей",
+          "caption": "Наим контей",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "номерКонтей",
+          "caption": "Номер контей",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
