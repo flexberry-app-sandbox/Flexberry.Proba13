@@ -28,55 +28,55 @@ export default Controller.extend({
             link: 'i-i-s-proba1-формир-распр-l',
             caption: i18n.t('forms.application.sitemap.proba1.i-i-s-proba1-формир-распр-l.caption'),
             title: i18n.t('forms.application.sitemap.proba1.i-i-s-proba1-формир-распр-l.title'),
-            icon: 'suitcase',
+            icon: 'list',
             children: null
           }, {
             link: 'i-i-s-proba1-клиенты-l',
             caption: i18n.t('forms.application.sitemap.proba1.i-i-s-proba1-клиенты-l.caption'),
             title: i18n.t('forms.application.sitemap.proba1.i-i-s-proba1-клиенты-l.title'),
-            icon: 'tags',
+            icon: 'paperclip',
             children: null
           }, {
             link: 'i-i-s-proba1-список-контей-l',
             caption: i18n.t('forms.application.sitemap.proba1.i-i-s-proba1-список-контей-l.caption'),
             title: i18n.t('forms.application.sitemap.proba1.i-i-s-proba1-список-контей-l.title'),
-            icon: 'calendar',
+            icon: 'list',
             children: null
           }, {
             link: 'i-i-s-proba1-товары-l',
             caption: i18n.t('forms.application.sitemap.proba1.i-i-s-proba1-товары-l.caption'),
             title: i18n.t('forms.application.sitemap.proba1.i-i-s-proba1-товары-l.title'),
-            icon: 'phone',
+            icon: 'suitcase',
             children: null
           }, {
             link: 'i-i-s-proba1-формир-рез-пос-l',
             caption: i18n.t('forms.application.sitemap.proba1.i-i-s-proba1-формир-рез-пос-l.caption'),
             title: i18n.t('forms.application.sitemap.proba1.i-i-s-proba1-формир-рез-пос-l.title'),
-            icon: 'calendar',
+            icon: 'paperclip',
             children: null
           }, {
             link: 'i-i-s-proba1-докум-постав-l',
             caption: i18n.t('forms.application.sitemap.proba1.i-i-s-proba1-докум-постав-l.caption'),
             title: i18n.t('forms.application.sitemap.proba1.i-i-s-proba1-докум-постав-l.title'),
-            icon: 'edit',
+            icon: 'file',
             children: null
           }, {
             link: 'i-i-s-proba1-пункт-погрузки-l',
             caption: i18n.t('forms.application.sitemap.proba1.i-i-s-proba1-пункт-погрузки-l.caption'),
             title: i18n.t('forms.application.sitemap.proba1.i-i-s-proba1-пункт-погрузки-l.title'),
-            icon: 'tags',
+            icon: 'table',
             children: null
           }, {
             link: 'i-i-s-proba1-список-барж-l',
             caption: i18n.t('forms.application.sitemap.proba1.i-i-s-proba1-список-барж-l.caption'),
             title: i18n.t('forms.application.sitemap.proba1.i-i-s-proba1-список-барж-l.title'),
-            icon: 'archive',
+            icon: 'briefcase',
             children: null
           }, {
             link: 'i-i-s-proba1-организация-l',
             caption: i18n.t('forms.application.sitemap.proba1.i-i-s-proba1-организация-l.caption'),
             title: i18n.t('forms.application.sitemap.proba1.i-i-s-proba1-организация-l.title'),
-            icon: 'edit',
+            icon: 'list',
             children: null
           }]
         }
